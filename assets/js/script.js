@@ -7,6 +7,14 @@ var taskFormHandler = function(event) {
   //.value selects JUST the value property from the elment
   var taskTypeInput = document.querySelector("select[name='task-type']").value; 
 
+  // check if input values are empty strings
+  if (!taskNameInput || !taskTypeInput) {
+    alert("You need to fill out the task form!");
+    return false; // function stops when it reads return false
+  }
+
+  formEl.reset(); // resets the form to its default (in this case blank) values
+
   // package up data as an object
   var taskDataObj = {
     name: taskNameInput,
