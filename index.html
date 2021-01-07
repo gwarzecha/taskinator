@@ -18,7 +18,7 @@
         <input type="text" name="task-name" placeholder="Enter Task Name"/>
       </div>
       <div class="form-group">
-        <select name="task-type" class="select-dropdown"> <!--select signifies a drop-down lost, name identifies the form input-->
+        <select name="task-type" class="select-dropdown"> <!--select signifies a drop-down list, name identifies the form input-->
           <option value="" disabled selected>Pick a task type</option> <!--selected property makes it appear first, disabled property prevents it from being chosen-->
           <option value="Print">Print</option>
           <option value="Web">Web</option>
@@ -37,6 +37,18 @@
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks To Do</h2>
       <ul class="task-list" id="tasks-to-do"></ul>
+    </section>
+
+    <!--Tasks in Progress-->
+    <section class="task-list-wrapper">
+      <h2 class="list-title">Tasks In Progress</h2>
+      <ul class="task-list" id="tasks-in-progress"></ul>
+    </section>
+
+    <!--Tasks Completed-->
+    <section class="task-list-wrapper">
+      <h2 class="list-title">Tasks Completed</h2>
+      <ul class="task-list" id="tasks-completed"></ul>
     </section>
 
   </main>
